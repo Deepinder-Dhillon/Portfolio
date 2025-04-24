@@ -1,0 +1,48 @@
+/* ~/components/tags.css */
+
+.badgesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 2em;
+  
+  /* Initial state */
+  opacity: 0;
+  transform: translateY(30px); /* Adjust the offset as needed */
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.badgesContainer[data-status='entered'] {
+  opacity: 1;
+  transform: none;
+}
+
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background: var(--tagsBackground);
+  
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px var(--shadow);
+    transition:  0.5s ease;
+  }
+  
+  .badge:hover {
+    transform:  scale(1.1);
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+  
