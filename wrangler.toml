@@ -1,4 +1,21 @@
+# KV namespace binding
 kv_namespaces = [
-  { id = "MY_KV", binding="MY_KV" }
+  { id = "MY_KV", binding = "MY_KV" }
 ]
+
+# Compatibility settings
 compatibility_date = "2024-02-20"
+
+# Pages configuration
+[site]
+bucket = "./build/client"
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "directory"
+
+# This is the key addition needed for Pages
+[pages]
+pages_build_output_dir = "build/client"
