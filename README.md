@@ -89,4 +89,7 @@ To deploy this project on Cloudflare:
 
 ## License 
 MIT
-Feel free to look around and let me know if you have any questions or feedback. I'm always open to ideas and collaboration opportunities!
+<br>
+Feel free to look around and let me know if you have any questions.
+<br>
+I'm always open to ideas and collaboration opportunities!
