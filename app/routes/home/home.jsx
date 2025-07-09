@@ -19,6 +19,12 @@ import qmTexture2 from '~/assets/qm.jpg';
 import qmTextureLarge from '~/assets/qm1-large.jpg';
 import qmTexturePlaceholder from '~/assets/qm1_placeholder.jpg';
 import qmTexture from '~/assets/qm1.jpg';
+import stTexture2Large from '~/assets/st-large.jpg';
+import stTexture2Placeholder from '~/assets/st_placeholder.jpg';
+import stTexture2 from '~/assets/st.jpg';
+import stTextureLarge from '~/assets/st1-large.jpg';
+import stTexturePlaceholder from '~/assets/st1_placeholder.jpg';
+import stTexture from '~/assets/st1.jpg';
 
 import config from '~/config.json';
 import styles from './home.module.css';
@@ -143,7 +149,7 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="StyleFlux – Seamless Shopping"  
+        title="StyleFlux - Seamless Shopping"  
         description="Developed a SwiftUI-powered shopping app with Firebase for real-time data and secure authentication."         
         buttonText="View project"
         buttonLink="/projects/styleflux"
@@ -168,7 +174,7 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="SmartPortal – Patient Management System"  
+        title="SmartPortal - Patient Management System"  
         description="Built a full-stack patient management system using Django and React, featuring secure authentication, patient record management."  
 
         buttonText="View on GitHub"
@@ -192,7 +198,7 @@ export const Home = () => {
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="QuickMath – Math Practice App"  
+        title="QuickMath - Math Practice App"  
         description="Developed a SwiftUI-powered shopping app with Firebase for real-time data and secure authentication."         
         buttonText="View Project"
         buttonLink="/projects/quickmath"
@@ -234,6 +240,33 @@ export const Home = () => {
           ],
         }}
         tags={['Vscode', 'JavaScript']}
+      />
+
+      <ProjectSummary
+        id="project-6"
+        alternate
+        sectionRef={projectFour}
+        visible={visibleSections.includes(projectFour.current)}
+        index={6}
+        title="Stellar Dust - UE5 Game"  
+        description="Designed and developed a 2D space shooter in Unreal Engine 5 using C++, featuring custom gameplay logic, enemy AI, and reactive HUD elements."        
+        buttonText="View Project on GitHub"
+        buttonLink="https://github.com/Deepinder-Dhillon/StellarDust"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: `${stTexture} 375w, ${stTextureLarge} 750w`,
+              placeholder: stTexturePlaceholder,
+            },
+            {
+              srcSet: `${stTexture2} 375w, ${stTexture2Large} 750w`,
+              placeholder: stTexture2Placeholder,
+            },
+          ],
+        }}
+        tags={['UE5', 'VSStudio', 'C++']}
       />
      
     

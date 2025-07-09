@@ -26,7 +26,9 @@ export function Tags({ selectedLabels = [] }) {
     {label: 'Python', iconUrl: '/icons/Python.png'},
     {label: 'JavaScript', iconUrl: '/icons/JavaScript.png'},
     {label: 'CoreML', iconUrl: '/icons/CoreML.png'},
-    {label: 'Vscode', iconUrl: '/icons/vs-code-ext.png'},
+    {label: 'UE5', iconUrl: '/icons/unrealengine.png'},
+    {label: 'VSStudio', iconUrl: '/icons/Visual_Studio.png'},
+    {label: 'C++', iconUrl: '/icons/cplus.png'},
     
   ];
 
